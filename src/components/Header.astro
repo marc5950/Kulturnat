@@ -3,6 +3,44 @@
 ---
 
 <nav>
-  <a href="/">Forside</a>
-  <a href="side2">Side 2</a>
+  <a href=""><button>Program</button></a>
+  <a href="">Arrangør</a>
+  <img src="" alt="" />
+  <a href="">Om Kulturnatten</a>
+  <a href="">Galleri</a>
 </nav>
+
+<style>
+  nav {
+    /* Layout */
+    display: flex;
+    grid-template-columns: auto;
+    width: 1360px;
+    height: 67.518px;
+    padding: 10px;
+    align-items: center;
+    gap: 18px;
+    flex-shrink: 0;
+
+    /* Style */
+    border-radius: 80px;
+    background: rgba(28, 28, 40, 0.8);
+    backdrop-filter: blur(5px);
+  }
+
+  button {
+    /* Layout */
+    display: flex;
+    width: 249px;
+    height: 50px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+
+    /* Style */
+    border-radius: 50px;
+    background: var(--Tetriary, #e82746);
+  }
+</style>
