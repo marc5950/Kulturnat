@@ -9,7 +9,8 @@ body {
 }
 
 :root {
-  --color-primary: #f0f0f0;
-  --color-secondary: #333;
-  --color-bg: #f0f0f0;
+  --color-primary: #0f0f15;
+  --color-secondary: #e7e6eb;
+  --color-tertiary: #292939;
+  --color-bg: #0f0f15;
 }

@@ -1,5 +1,6 @@
 ---
 const { variant, size } = Astro.props;
+import "../styles/global.css";
 ---
 
 <button class={variant + " " + size}><slot /></button>
