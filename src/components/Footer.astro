@@ -1,34 +1,118 @@
 ---
 import "../styles/global.css";
+import footerlogo1 from "../assets/kulturnattenlogofooter.png";
+import footerlogo2 from "../assets/kulturnattenlogofooter1.png";
+import footerlogo3 from "../assets/kulturnattenlogofooter2.png";
+import fblogo from "../assets/fblogo.svg";
+import iglogo from "../assets/iglogo.svg";
+import wave3 from "../assets/wave3.svg";
 ---
 
-<div class="flex footer1">
-  <div class="flexcol">
-    <h3>Genveje</h3>
-    <ol>
-      <li><a href="">Program</a></li>
-      <li><a href="">Praktiske oplysninger</a></li>
-      <li><a href="">Kontakt</a></li>
-      <li><a href="">For arrangører</a></li>
-    </ol>
+<div class="flexcol">
+  <div class="wave">
+    <img src={wave3.src} alt="#" />
   </div>
-  <div class="flex">
-    <img src="../assets/fblogo.svg" alt="Facebook" /><img
-      src="../assets/iglogo.svg"
-      alt="Instagram"
-    />
+  <div class="grid footer1">
+    <div class="flexcol genveje">
+      <h3>Genveje</h3>
+      <ul>
+        <li><a href="">Program</a></li>
+        <li><a href="">Praktiske oplysninger</a></li>
+        <li><a href="">Kontakt</a></li>
+        <li><a href="">For arrangører</a></li>
+      </ul>
+    </div>
+    <div class="flex some">
+      <img src={fblogo.src} alt="Facebook" />
+      <img src={iglogo.src} alt="Instagram" />
+    </div>
+    <div class="flexcol kontakt">
+      <h3>Kontakt</h3>
+      <div>
+        <p>Har du spørgsmål til kulturnat?</p><p>
+          Email: <a href="mailto:kulturnatten@elsinore2032.dk"
+            ><u>kulturnatten@elsinore2032.dk</u></a
+          >
+        </p>
+      </div>
+    </div>
   </div>
-  <div class="flexcol">
-    <h3>Kontakt</h3><p>Har du spørgsmål til kulturnat?</p><p>
-      Email: <a href="mailto:kulturnatten@elsinore2032.dk"
-        >kulturnatten@elsinore2032.dk</a
-      >
-    </p>
+  <div class="grid logoer">
+    <a href="#"><img src={footerlogo2.src} alt="kulturnatten" /></a>
+    <a href="/"><img src={footerlogo1.src} alt="kulturnatten" /></a>
+    <a href="#"><img src={footerlogo3.src} alt="kulturnatten" /></a>
   </div>
 </div>
 
 <style>
   .footer1 {
-    background-color: var(--color-tertiary);
+    background-color: var(--color-quaternary);
+    padding: 3rem;
+  }
+  .flexcol {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+  .grid > *:nth-child(3n + 1) {
+    /* Første kolonne i hver række */
+    justify-self: start;
+  }
+
+  .grid > *:nth-child(3n + 2) {
+    /* Anden kolonne i hver række */
+    justify-self: center;
+  }
+
+  .grid > *:nth-child(3n) {
+    /* Tredje kolonne i hver række */
+    justify-self: end;
+  }
+  h3,
+  p {
+    color: var(--color-tertiary);
+    cursor: default;
+  }
+  a {
+    color: var(--color-tertiary);
+    text-decoration: none;
+  }
+  ul {
+    color: var(--color-tertiary);
+    list-style-position: inside;
+  }
+  .kontakt {
+    text-align: end;
+  }
+  .kontakt,
+  .genveje {
+    gap: 0.5rem;
+  }
+  .some {
+    gap: 1rem;
+    img {
+      width: 3rem;
+    }
+  }
+  .logoer {
+    padding: 3rem;
+    background-color: var(--color-quaternary);
+    align-items: center;
+    img {
+      max-width: 100%;
+    }
+  }
+  .wave {
+    margin-bottom: -10px;
+    img {
+      width: 100%;
+    }
   }
 </style>
