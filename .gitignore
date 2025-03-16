@@ -1,4 +1,5 @@
 .vscode
+*.mp4
 
 # build output
 dist/

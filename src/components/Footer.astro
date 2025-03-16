@@ -12,7 +12,7 @@ import wave3 from "../assets/wave3.svg";
   <div class="wave">
     <img src={wave3.src} alt="#" />
   </div>
-  <div class="grid footer1">
+  <div class="grid outerpadding footer1">
     <div class="flexcol genveje">
       <h3>Genveje</h3>
       <ul>
@@ -37,7 +37,7 @@ import wave3 from "../assets/wave3.svg";
       </div>
     </div>
   </div>
-  <div class="grid logoer">
+  <div class="grid outerpadding logoer">
     <a href="#"><img src={footerlogo2.src} alt="kulturnatten" /></a>
     <a href="/"><img src={footerlogo1.src} alt="kulturnatten" /></a>
     <a href="#"><img src={footerlogo3.src} alt="kulturnatten" /></a>
@@ -47,15 +47,8 @@ import wave3 from "../assets/wave3.svg";
 <style>
   .footer1 {
     background-color: var(--color-quaternary);
-    padding: 3rem;
   }
-  .flexcol {
-    display: flex;
-    flex-direction: column;
-  }
-  .flex {
-    display: flex;
-  }
+
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -102,7 +95,6 @@ import wave3 from "../assets/wave3.svg";
     }
   }
   .logoer {
-    padding: 3rem;
     background-color: var(--color-quaternary);
     align-items: center;
     img {
@@ -110,7 +102,7 @@ import wave3 from "../assets/wave3.svg";
     }
   }
   .wave {
-    margin-bottom: -10px;
+    margin-bottom: -5px;
     img {
       width: 100%;
     }

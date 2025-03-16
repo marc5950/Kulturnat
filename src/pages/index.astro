@@ -1,8 +1,83 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import CardsForside from "../components/CardsForside.astro";
+import Btn from "../components/Btn.astro";
+import Herovideo from "../assets/Herovideo.mp4";
 ---
 
 <Layout titel="Kulturnat Helsingør">
-  <CardsForside />
+  <div class="flexcol main">
+    <div class="hero">
+      <video autoplay loop muted playsinline src={Herovideo}></video>
+      <div class="gradient"></div>
+      <div class="flexcol herotext">
+        <h1>Kulturnat Helsingør</h1>
+        <h2>Mere end 100 aktiviteter fordelt i kommunen</h2>
+      </div>
+    </div>
+    <div class="flex datocta">
+      <div class="flexcol datoctacard">
+        <h2>Tikøb</h2>
+        <h3>19/9</h3>
+        <Btn size="m">Program</Btn>
+      </div>
+      <div class="flexcol datoctacard">
+        <h2>Helsingør & Espergærde</h2>
+        <h3>26/9</h3>
+        <Btn size="m">Program</Btn>
+      </div>
+    </div>
+    <div class="flexcol cards">
+      <h2>Populære aktiviteter</h2>
+      <CardsForside />
+    </div>
+  </div>
 </Layout>
+
+<style>
+  .main {
+    text-align: center;
+    align-items: center;
+    gap: 6rem;
+  }
+
+  .hero {
+    height: min-content;
+    position: relative;
+  }
+  .gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(15, 15, 21, 0) 0%,
+      rgba(15, 15, 21, 0.5) 48%,
+      #0f0f15 83%
+    );
+  }
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  .herotext {
+    position: absolute;
+    bottom: 25%;
+    left: 3rem;
+    text-align: start;
+  }
+  .datocta {
+    gap: 9rem;
+    margin-top: -3rem;
+  }
+  .datoctacard {
+    align-items: center;
+    gap: 1rem;
+    h3 {
+      font-size: 7rem;
+    }
+  }
+</style>

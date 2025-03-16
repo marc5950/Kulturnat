@@ -6,6 +6,7 @@ body {
   h4,
   p {
     font-family: "roboto", sans-serif;
+    color: var(--color-secondary);
   }
 }
 
@@ -21,4 +22,15 @@ body {
   --color-tertiary: #e82746;
   --color-quaternary: #292939;
   --color-bg: #0f0f15;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+}
+.flex {
+  display: flex;
+}
+.outerpadding {
+  padding: 3rem;
 }
