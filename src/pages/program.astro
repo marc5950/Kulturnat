@@ -1,7 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Filtrering from "../components/Filtrering.astro";
 ---
 
 <Layout titel="Program">
   <h1>Hej med dig</h1>
+  <Filtrering variant="search" size="large">Søg</Filtrering>
+  <Filtrering variant="pilned" size="small">Filtrer</Filtrering>
 </Layout>
