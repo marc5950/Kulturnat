@@ -6,7 +6,7 @@ body {
   h4,
   p,
   button {
-    font-family: "Anybody", sans-serif;
+    font-family: Fonseca, sans-serif;
     color: var(--color-secondary);
     text-transform: uppercase;
   }

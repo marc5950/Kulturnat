@@ -5,18 +5,19 @@ import Cardwave from "../assets/cardwave.svg";
 import Cardwave2 from "../assets/cardwave2.svg";
 ---
 
-<article>
-  <div class="top">
+<articl class="flexcol">
+  <div class="flexcol top">
     <img src={Cardwave.src} alt="#" />
-    <h2>{lokation}</h2>
+    <h3>{lokation}</h3>
   </div>
   <img src={foto} alt="#" />
-  <div class="buttom"></div>
-  <img src={Cardwave2.src} alt="#" />
-  <p>{beskrivelse}</p>
-  <h3>{tid}</h3>
-  <button>knap</button>
-</article>
+  <div class="buttom">
+    <img src={Cardwave2.src} alt="#" />
+    <p>{beskrivelse}</p>
+    <h3>{tid}</h3>
+    <button>knap</button>
+  </div>
+</articl>
 
 <style>
   h2,
@@ -28,5 +29,21 @@ import Cardwave2 from "../assets/cardwave2.svg";
   img {
     width: 300px;
     height: auto;
+  }
+  section {
+    position: relative;
+  }
+  .top {
+    z-index: 1;
+    img {
+      margin-bottom: -75px;
+    }
+  }
+  .buttom {
+    z-index: 1;
+    margin-top: -35px;
+    img {
+      margin-bottom: -80px;
+    }
   }
 </style>
