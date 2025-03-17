@@ -1,3 +1,14 @@
 ---
 import "../styles/global.css";
+import Card from "./Card.astro";
+import Cardfoto from "../assets/cardfoto.png";
 ---
+
+<div class="flex cards">
+  <Card
+    lokation="Lokation"
+    beskrivelse="Beskrivelse"
+    foto={Cardfoto.src}
+    tid="Kl. 18:30 - 19:30"
+  />
+</div>

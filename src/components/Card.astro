@@ -1,26 +1,32 @@
 ---
-const { header, beskrivelse } = Astro.props;
+const { lokation, beskrivelse, foto, tid } = Astro.props;
 import "../styles/global.css";
+import Cardwave from "../assets/cardwave.svg";
+import Cardwave2 from "../assets/cardwave2.svg";
 ---
 
 <article>
-  <h2>{header}</h2>
-  <p>Fælles tekst</p>
+  <div class="top">
+    <img src={Cardwave.src} alt="#" />
+    <h2>{lokation}</h2>
+  </div>
+  <img src={foto} alt="#" />
+  <div class="buttom"></div>
+  <img src={Cardwave2.src} alt="#" />
   <p>{beskrivelse}</p>
-  <div class="carddesign"><slot /></div>
+  <h3>{tid}</h3>
   <button>knap</button>
 </article>
 
 <style>
-  h2 {
-    color: red;
+  h2,
+  h3,
+  p {
+    color: var(--color-secondary);
   }
-  article {
-    border: 1px solid black;
-    padding: 1rem;
-    margin: 1rem;
-  }
-  .carddesign :global(p) {
-    color: blue;
+
+  img {
+    width: 300px;
+    height: auto;
   }
 </style>
