@@ -2,13 +2,116 @@
 import Card from "./Card.astro";
 import Btn from "./Btn.astro";
 import "../styles/global.css";
+import Cardfoto from "../assets/cardfoto.png";
 ---
 
-<h1>Min Første Astro side</h1>
-<Btn variant="primary" size="small">KNAP HER</Btn>
-<Btn>ANDEN KNAP HER</Btn>
-<h2>test</h2>
-<Card header="overskrift" beskrivelse="beskrivelse"><p>slot tekst her</p></Card>
-<Card header="overskrift1" beskrivelse="beskrivelse1" />
-<Card header="overskrift2" beskrivelse="beskrivelse2" />
-<h2>test 2</h2>
+<div class="cardgrid outerpadding">
+  <Card
+    lokation="Lokation"
+    beskrivelse="Beskrivelse"
+    foto={Cardfoto.src}
+    tid="Kl. 18:30 - 19:30"
+  />
+  <Card
+    lokation="Lokation"
+    beskrivelse="Beskrivelse"
+    foto={Cardfoto.src}
+    tid="Kl. 18:30 - 19:30"
+  />
+  <Card
+    lokation="Lokation"
+    beskrivelse="Beskrivelse"
+    foto={Cardfoto.src}
+    tid="Kl. 18:30 - 19:30"
+  />
+  <Card
+    lokation="Lokation"
+    beskrivelse="Beskrivelse"
+    foto={Cardfoto.src}
+    tid="Kl. 18:30 - 19:30"
+  />
+  <Card
+    lokation="Lokation"
+    beskrivelse="Beskrivelse"
+    foto={Cardfoto.src}
+    tid="Kl. 18:30 - 19:30"
+  />
+  <Card
+    lokation="Lokation"
+    beskrivelse="Beskrivelse"
+    foto={Cardfoto.src}
+    tid="Kl. 18:30 - 19:30"
+  />
+  <Card
+    lokation="Lokation"
+    beskrivelse="Beskrivelse"
+    foto={Cardfoto.src}
+    tid="Kl. 18:30 - 19:30"
+  />
+  <Card
+    lokation="Lokation"
+    beskrivelse="Beskrivelse"
+    foto={Cardfoto.src}
+    tid="Kl. 18:30 - 19:30"
+  />
+  <Card
+    lokation="Lokation"
+    beskrivelse="Beskrivelse"
+    foto={Cardfoto.src}
+    tid="Kl. 18:30 - 19:30"
+  />
+  <Card
+    lokation="Lokation"
+    beskrivelse="Beskrivelse"
+    foto={Cardfoto.src}
+    tid="Kl. 18:30 - 19:30"
+  />
+  <Card
+    lokation="Lokation"
+    beskrivelse="Beskrivelse"
+    foto={Cardfoto.src}
+    tid="Kl. 18:30 - 19:30"
+  />
+  <Card
+    lokation="Lokation"
+    beskrivelse="Beskrivelse"
+    foto={Cardfoto.src}
+    tid="Kl. 18:30 - 19:30"
+  />
+  <Card
+    lokation="Lokation"
+    beskrivelse="Beskrivelse"
+    foto={Cardfoto.src}
+    tid="Kl. 18:30 - 19:30"
+  />
+  <Card
+    lokation="Lokation"
+    beskrivelse="Beskrivelse"
+    foto={Cardfoto.src}
+    tid="Kl. 18:30 - 19:30"
+  />
+  <Card
+    lokation="Lokation"
+    beskrivelse="Beskrivelse"
+    foto={Cardfoto.src}
+    tid="Kl. 18:30 - 19:30"
+  />
+  <Card
+    lokation="Lokation"
+    beskrivelse="Beskrivelse"
+    foto={Cardfoto.src}
+    tid="Kl. 18:30 - 19:30"
+  />
+</div>
+
+<style>
+  .cardgrid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    row-gap: 50px;
+    align-self: stretch;
+    flex-wrap: wrap;
+  }
+</style>
