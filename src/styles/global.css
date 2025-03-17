@@ -8,6 +8,7 @@ body {
   button {
     font-family: "Anybody", sans-serif;
     color: var(--color-secondary);
+    text-transform: uppercase;
   }
 }
 
