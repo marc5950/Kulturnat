@@ -204,3 +204,15 @@ Derudover spillede vores benchmark-analyse en vigtig rolle. Ved at analysere eta
 Samlet set vurderer vi det endelige resultat som meget vellykket. Vores løsning lever op til de oprindelige mål og brugerbehov, især med fokus på et let tilgængeligt program, billetinformation og en mobilvenlig oplevelse.
 
 Vi har formået at skabe en platform, der både informerer og engagerer, og som vi selv ville finde interessant at bruge. Gennem research, test og brugerinvolvering har vi skabt et design, der ikke blot fungerer, men også føles spændende at udforske. Der er stadig plads til forbedringer, men vi har opnået et solidt fundament, som kan videreudvikles i fremtiden.
+
+## Refleksion over samarbejdet
+
+### Konklusion på vores samarbejde
+
+Vi startede vores samarbejde med at udarbejde en Team Canvas for at etablere vores forventninger og sikre, at vi havde en fælles forståelse af mål, roller og arbejdsmetoder. Dette hjalp os med at skabe en struktureret og effektiv arbejdsproces.
+
+Samarbejdet har generelt fungeret rigtig godt. Vi havde en god kommunikation og forstod hinanden godt, hvilket gjorde det nemt at arbejde sammen. Vores daglige Scrum-møder var en vigtig faktor i at holde os opdateret og sikre, at vi hele tiden havde et overblik over vores opgaver.
+
+En ting, vi kunne have gjort bedre, var at bruge Trello eller et lignende projektstyringsværktøj. Selvom vi holdt hinanden opdateret via vores Messenger-gruppe, kunne et visuelt overblik over opgaver have gjort det endnu nemmere at holde styr på, hvad der var blevet lavet, og hvad der manglede.
+
+Alt i alt har vi haft et produktivt samarbejde, hvor vi har udnyttet vores individuelle styrker og arbejdet struktureret mod et fælles mål. Vi har skabt et projekt, som vi er stolte af, og hvor vi har lært meget undervejs – både om samarbejde, kommunikation og projektstyring.
