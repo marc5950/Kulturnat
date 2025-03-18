@@ -216,3 +216,13 @@ Samarbejdet har generelt fungeret rigtig godt. Vi havde en god kommunikation og 
 En ting, vi kunne have gjort bedre, var at bruge Trello eller et lignende projektstyringsværktøj. Selvom vi holdt hinanden opdateret via vores Messenger-gruppe, kunne et visuelt overblik over opgaver have gjort det endnu nemmere at holde styr på, hvad der var blevet lavet, og hvad der manglede.
 
 Alt i alt har vi haft et produktivt samarbejde, hvor vi har udnyttet vores individuelle styrker og arbejdet struktureret mod et fælles mål. Vi har skabt et projekt, som vi er stolte af, og hvor vi har lært meget undervejs – både om samarbejde, kommunikation og projektstyring.
+
+## Konklusion af Tema 8
+
+Det projekt vi har udarbejdet i Tema 8, resulterede i et succesfuldt redesign af Kulturnat Helsingørs website, der effektivt imødekommer brugernes behov og følger de best practices inden for webdesign vi har lært på 1. semester.   Gennem grundig brugerresearch identificerede vi centrale behov såsom mobilvenlighed, nem adgang til programmet, støtte til planlægning og navigation samt et mere engagerende visuelt udtryk.
+
+Det færdige design bygger på et gennemtestet designsystem med en ny visuel identitet til Kulturnat Helsingør. Vores design blev vurderet højt i brugertests ud fra vores værdiord - inspirerende, funktionel og autentisk. Andre vigtige elementer vi har implementeret i løsningen, inkluderer et interaktivt kort, filtreringsmuligheder for events og en intuitiv, mobilvenlig brugerflade.
+
+Vi brugte Astro til at implementere løsningen, dette gjorde vi kunne sikre en effektiv og vedligeholdelsesvenlig kodebase, hvor vores brug af komponenter, props og slots bidrog til en fleksibel struktur opbygget af mange moduler.  Samarbejdet i gruppen fungerede overordnet godt med en klar arbejdsfordeling og effektiv kommunikation, men projektstyringen kunne have været optimeret ved brug af værktøjer som Trello.
+
+Det endelige resultat er en platform, der ikke blot formidler information, men også engagerer og inspirerer brugerne til at deltage aktivt i Kulturnatten i Helsingør.
