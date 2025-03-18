@@ -23,8 +23,8 @@ import wave3 from "../assets/wave3.svg";
       </ul>
     </div>
     <div class="flex some">
-      <img src={fblogo.src} alt="Facebook" />
-      <img src={iglogo.src} alt="Instagram" />
+      <a href="#"><img src={fblogo.src} alt="Facebook" /></a>
+      <a href="#"><img src={iglogo.src} alt="Instagram" /></a>
     </div>
     <div class="flexcol kontakt">
       <h3>Kontakt</h3>
@@ -80,9 +80,15 @@ import wave3 from "../assets/wave3.svg";
   ul {
     color: var(--color-tertiary);
     list-style-position: inside;
+    :hover {
+      color: var(--color-secondary);
+    }
   }
   .kontakt {
     text-align: end;
+    p {
+      font-size: 0.75rem;
+    }
   }
   .kontakt,
   .genveje {
@@ -90,8 +96,15 @@ import wave3 from "../assets/wave3.svg";
   }
   .some {
     gap: 1rem;
+    align-items: center;
     img {
       width: 3rem;
+    }
+    a {
+      transition: all 0.3s;
+      :hover {
+        transform: scale(1.1);
+      }
     }
   }
   .logoer {
@@ -105,6 +118,18 @@ import wave3 from "../assets/wave3.svg";
     margin-bottom: -5px;
     img {
       width: 100%;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .grid {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      gap: 1.5rem;
+    }
+    .kontakt {
+      text-align: start;
     }
   }
 </style>
