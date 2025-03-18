@@ -1,46 +1,89 @@
 ---
-
+import logo from "../assets/mainlogo.svg";
 ---
 
 <nav>
-  <a href=""><button>Program</button></a>
-  <a href="">Arrangør</a>
-  <img src="" alt="" />
-  <a href="">Om Kulturnatten</a>
-  <a href="">Galleri</a>
+  <a class="menuelement" href=""><h3>Program</h3></a>
+  <a class="menuelement" href=""><h3>Arrangør</h3></a>
+  <a href=""><img src={logo.src} alt="" /></a>
+  <a class="menuelement" href=""><h3>Om Kulturnatten</h3></a>
+  <a class="menuelement" href=""><h3>Galleri</h3></a>
 </nav>
 
 <style>
   nav {
     /* Layout */
     display: flex;
-    grid-template-columns: auto;
-    width: 1360px;
-    height: 67.518px;
-    padding: 10px;
+    width: calc(100vw - 100px);
+    padding: 5px 15px;
+    justify-content: space-between;
     align-items: center;
-    gap: 18px;
-    flex-shrink: 0;
+    align-self: stretch;
+    position: fixed;
+    left: 50px;
+    z-index: 1;
 
     /* Style */
     border-radius: 80px;
-    background: rgba(28, 28, 40, 0.8);
-    backdrop-filter: blur(5px);
+    background: rgba(28, 28, 40, 0.5);
+    backdrop-filter: blur(10px);
   }
 
-  button {
-    /* Layout */
-    display: flex;
-    width: 249px;
-    height: 50px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
+  @media (min-width: 1215px) {
+    nav {
+      /* Layout */
+      display: flex;
+      width: calc(100vw - 100px);
+      height: 70px;
+      padding: 10px;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+      margin: 10px auto;
+      position: fixed;
+      left: 50px;
+      z-index: 1;
+    }
 
-    /* Style */
-    border-radius: 50px;
-    background: var(--Tetriary, #e82746);
+    .menuelement {
+      /* Layout */
+      display: flex;
+      height: 50px;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      text-decoration: none;
+      padding: 0 4% 0 4%;
+
+      /* Style */
+      border-radius: 50px;
+    }
+
+    h3 {
+      /* Layout */
+      width: 200%;
+      flex-shrink: 0;
+
+      /* Typography */
+      color: var(--Tetriary, #e82746);
+      text-align: center;
+      font-family: Fonseca;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    .menuelement:hover {
+      border-radius: 50px;
+      background: var(--Tetriary, #e82746);
+      transition: ease-in-out 0.2s;
+    }
+
+    .menuelement:hover h3 {
+      color: var(--Secondary-2, #1c1c28);
+    }
   }
 </style>
