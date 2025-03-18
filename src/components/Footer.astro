@@ -15,12 +15,11 @@ import wave3 from "../assets/wave3.svg";
   <div class="grid outerpadding footer1">
     <div class="flexcol genveje">
       <h3>Genveje</h3>
-      <ul>
-        <li><a href="program">Program</a></li>
-        <li><a href="">Praktiske oplysninger</a></li>
-        <li><a href="">Kontakt</a></li>
-        <li><a href="">For arrangører</a></li>
-      </ul>
+
+      <a href="program">Program</a>
+      <a href="">Praktiske oplysninger</a>
+      <a href="">Kontakt</a>
+      <a href="">For arrangører</a>
     </div>
     <div class="flex some">
       <a href="#"><img src={fblogo.src} alt="Facebook" /></a>
@@ -49,6 +48,10 @@ import wave3 from "../assets/wave3.svg";
     background-color: var(--color-quaternary);
   }
 
+  a {
+    font-family: "Fonseca";
+  }
+
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -68,6 +71,11 @@ import wave3 from "../assets/wave3.svg";
     /* Tredje kolonne i hver række */
     justify-self: end;
   }
+
+  h3 {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+  }
   h3,
   p {
     color: var(--color-tertiary);
@@ -76,6 +84,9 @@ import wave3 from "../assets/wave3.svg";
   a {
     color: var(--color-tertiary);
     text-decoration: none;
+  }
+  a:hover {
+    color: white;
   }
   ul {
     color: var(--color-tertiary);
@@ -87,7 +98,7 @@ import wave3 from "../assets/wave3.svg";
   .kontakt {
     text-align: end;
     p {
-      font-size: 0.75rem;
+      font-size: 1rem;
     }
   }
   .kontakt,
