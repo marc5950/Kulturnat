@@ -19,12 +19,12 @@ import Herovideo from "../assets/Herovideo.mp4";
       <div class="flexcol datoctacard">
         <h2>Tikøb</h2>
         <h3>19/9</h3>
-        <Btn>Program</Btn>
+        <a href="program"><Btn>Program</Btn></a>
       </div>
       <div class="flexcol datoctacard">
         <h2>Helsingør & Espergærde</h2>
         <h3>26/9</h3>
-        <Btn>Program</Btn>
+        <a href="program"><Btn>Program</Btn></a>
       </div>
     </div>
     <div class="flexcol cards">
@@ -85,6 +85,12 @@ import Herovideo from "../assets/Herovideo.mp4";
     margin-bottom: 100px;
     h2 {
       font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 1020px) {
+    .datocta {
+      flex-direction: column;
     }
   }
 </style>
